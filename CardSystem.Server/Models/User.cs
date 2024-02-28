@@ -1,6 +1,8 @@
-﻿namespace CardSystem.Server.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace CardSystem.Server.Models
 {
-    public class User
+    public class User : IdentityUser
     {
         public int Id { get; set; }
         public string LastName { get; set; }

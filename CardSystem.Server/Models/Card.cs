@@ -5,8 +5,8 @@
         public int Id { get; set; }
         public string CardNumber { get; set; }
         public bool Valid { get; set; }
-        public string State { get; set; } // Enum might be better
-        public string Type { get; set; } // Enum might be better
+        public string State { get; set; }
+        public string Type { get; set; }
 
         // Foreign key
         public int AccountId { get; set; }

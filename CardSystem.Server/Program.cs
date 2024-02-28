@@ -1,3 +1,9 @@
+using CardSystem.Server.Data;
+using CardSystem.Server.Models;
+using CardSystem.Server.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,10 +13,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase")));
+builder.Services.AddAuthentication();
+builder.Services.AddTransient<IEmailSender<User>, EmailSender>(); // Register your EmailSender service
+
+
+
 var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
+app.MapIdentityApi<User>();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
