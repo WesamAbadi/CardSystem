@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CardSystem.Server.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240228165901_init")]
-    partial class init
+    [Migration("20240229112832_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,6 +44,8 @@ namespace CardSystem.Server.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Accounts");
                 });
@@ -76,6 +78,8 @@ namespace CardSystem.Server.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AccountId");
+
                     b.ToTable("Cards");
                 });
 
@@ -104,6 +108,10 @@ namespace CardSystem.Server.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CardId");
+
+                    b.HasIndex("VendorId");
 
                     b.ToTable("Transactions");
                 });
@@ -137,7 +145,7 @@ namespace CardSystem.Server.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -169,6 +177,67 @@ namespace CardSystem.Server.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Vendors");
+                });
+
+            modelBuilder.Entity("CardSystem.Server.Models.Account", b =>
+                {
+                    b.HasOne("CardSystem.Server.Models.User", "User")
+                        .WithMany("Accounts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("CardSystem.Server.Models.Card", b =>
+                {
+                    b.HasOne("CardSystem.Server.Models.Account", "Account")
+                        .WithMany("Cards")
+                        .HasForeignKey("AccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Account");
+                });
+
+            modelBuilder.Entity("CardSystem.Server.Models.Transaction", b =>
+                {
+                    b.HasOne("CardSystem.Server.Models.Card", "Card")
+                        .WithMany("Transactions")
+                        .HasForeignKey("CardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CardSystem.Server.Models.Vendor", "Vendor")
+                        .WithMany("Transactions")
+                        .HasForeignKey("VendorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Card");
+
+                    b.Navigation("Vendor");
+                });
+
+            modelBuilder.Entity("CardSystem.Server.Models.Account", b =>
+                {
+                    b.Navigation("Cards");
+                });
+
+            modelBuilder.Entity("CardSystem.Server.Models.Card", b =>
+                {
+                    b.Navigation("Transactions");
+                });
+
+            modelBuilder.Entity("CardSystem.Server.Models.User", b =>
+                {
+                    b.Navigation("Accounts");
+                });
+
+            modelBuilder.Entity("CardSystem.Server.Models.Vendor", b =>
+                {
+                    b.Navigation("Transactions");
                 });
 #pragma warning restore 612, 618
         }

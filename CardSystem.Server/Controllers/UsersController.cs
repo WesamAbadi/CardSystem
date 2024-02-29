@@ -19,10 +19,12 @@ namespace CardSystem.Server.Controllers
         }
 
         [HttpGet(Name = "GetUsers")]
-        public async Task<IEnumerable<User>> Get()
+        public async Task<ActionResult<IEnumerable<User>>> Get()
         {
-            return await _context.Users.ToListAsync();
+            var users = await _context.Users.Where(u => u.UserName != null).ToListAsync();
+            return users;
         }
+
 
 
         [HttpGet("{id}", Name = "GetUserById")]
@@ -43,6 +45,16 @@ namespace CardSystem.Server.Controllers
             {
                 return BadRequest(ModelState);
             }
+
+            // Ensure UserName is not null
+            if (string.IsNullOrEmpty(user.UserName))
+            {
+                ModelState.AddModelError("UserName", "The UserName field is required.");
+                return BadRequest(ModelState);
+            }
+
+            // Optionally, you can hash the password here before saving to the database
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = user.Id }, user);

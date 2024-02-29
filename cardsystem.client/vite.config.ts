@@ -44,10 +44,42 @@ export default defineConfig({
     server: {
         proxy: {
             '^/weatherforecast': {
-                target,
+                target: 'https://localhost:7143/',
                 secure: false
             }, '^/Users': {
-                target,
+                target: 'https://localhost:7143/',
+                secure: false
+            }
+            , '^/accounts': {
+                target: 'https://localhost:7143/',
+                secure: false
+            }
+            , '^/cards': {
+                target: 'https://localhost:7143/',
+                secure: false
+            }
+            , '^/transactions': {
+                target: 'https://localhost:7143/',
+                secure: false
+            }
+            , '^/vendors': {
+                target: 'https://localhost:7143/',
+                secure: false
+            },
+            '^/admin/add-user': {
+                target: 'https://localhost:7143/',
+                secure: false
+            },
+            '^/admin': {
+                target: 'https://localhost:7143/',
+                secure: false
+            },
+            '^/login': {
+                target: 'https://localhost:7143/',
+                secure: false
+            },
+            '^/logout': {
+                target: 'https://localhost:7143/',
                 secure: false
             }
         },

@@ -1,6 +1,7 @@
 using CardSystem.Server.Data;
 using CardSystem.Server.Models;
 using CardSystem.Server.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,14 +20,22 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddAuthentication();
 builder.Services.AddTransient<IEmailSender<User>, EmailSender>(); // Register your EmailSender service
 
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+}).AddCookie();
 
 
 var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
-app.MapIdentityApi<User>();
-
+app.UseAuthentication();
+/*app.MapIdentityApi<User>();
+*/
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

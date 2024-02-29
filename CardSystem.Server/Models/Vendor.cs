@@ -7,5 +7,8 @@
         public string Address { get; set; }
         public string Contacts { get; set; }
 
+        public ICollection<Transaction> Transactions { get; set; }
+
+
     }
 }
