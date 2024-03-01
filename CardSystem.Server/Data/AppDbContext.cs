@@ -1,29 +1,28 @@
 ﻿using CardSystem.Server.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System.Numerics;
-using System.Security.Principal;
 
 namespace CardSystem.Server.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<User>
     {
-        protected readonly IConfiguration Configuration;
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public AppDbContext(IConfiguration configuration)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Configuration = configuration;
+            base.OnModelCreating(modelBuilder);
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseNpgsql(Configuration.GetConnectionString("WebApiDatabase"));
+            // This method is not needed since you're already passing options in the constructor
+            // options.UseNpgsql(Configuration.GetConnectionString("WebApiDatabase"));
         }
 
-        public DbSet<User> Users { get; set; }
         public DbSet<Card> Cards { get; set; }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Vendor> Vendors { get; set; }
-
     }
 }

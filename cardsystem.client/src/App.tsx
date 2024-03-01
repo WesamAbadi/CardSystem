@@ -3,6 +3,7 @@ import Home from './pages/Home.tsx';
 import Login from './pages/Login.tsx';
 import Register from './pages/Register.tsx';
 import AdminPage from './pages/AdminPage';
+import './App.css'
 
 
 

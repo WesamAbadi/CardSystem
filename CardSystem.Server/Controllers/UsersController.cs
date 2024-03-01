@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using CardSystem.Server.Data;
 using CardSystem.Server.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CardSystem.Server.Controllers
 {
@@ -18,7 +19,7 @@ namespace CardSystem.Server.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetUsers")]
+        [HttpGet(Name = "GetUsers"), Authorize]
         public async Task<ActionResult<IEnumerable<User>>> Get()
         {
             var users = await _context.Users.Where(u => u.UserName != null).ToListAsync();
@@ -60,7 +61,7 @@ namespace CardSystem.Server.Controllers
             return CreatedAtAction(nameof(GetById), new { id = user.Id }, user);
         }
 
-        [HttpPut("{id}", Name = "UpdateUser")]
+        /*[HttpPut("{id}", Name = "UpdateUser")]
         public async Task<IActionResult> Update(int id, [FromBody] User user)
         {
             if (id != user.Id)
@@ -107,6 +108,7 @@ namespace CardSystem.Server.Controllers
         private bool UserExists(int id)
         {
             return _context.Users.Any(e => e.Id == id);
-        }
+        }*/
+
     }
 }

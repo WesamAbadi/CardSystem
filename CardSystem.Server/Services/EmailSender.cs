@@ -9,7 +9,9 @@ namespace CardSystem.Server.Services
     {
         public Task SendConfirmationLinkAsync(User user, string email, string confirmationLink)
         {
-            throw new NotImplementedException();
+/*            throw new NotImplementedException();
+*/            return Task.CompletedTask;
+
         }
 
         public Task SendEmailAsync(User user, string subject, string htmlMessage)
@@ -22,12 +24,16 @@ namespace CardSystem.Server.Services
 
         public Task SendPasswordResetCodeAsync(User user, string email, string resetCode)
         {
-            throw new NotImplementedException();
+/*            throw new NotImplementedException();
+*/            return Task.CompletedTask;
+
         }
 
         public Task SendPasswordResetLinkAsync(User user, string email, string resetLink)
         {
-            throw new NotImplementedException();
+            /*throw new NotImplementedException();*/
+            return Task.CompletedTask;
+
         }
     }
 }
