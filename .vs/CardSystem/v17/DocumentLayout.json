@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A82E7EA-4A03-4C7F-B458-B9FDE674D885}|cardsystem.client\\cardsystem.client.esproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{6A82E7EA-4A03-4C7F-B458-B9FDE674D885}|cardsystem.client\\cardsystem.client.esproj|solutionrelative:cardsystem.client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A82E7EA-4A03-4C7F-B458-B9FDE674D885}|cardsystem.client\\cardsystem.client.esproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.client\\src\\pages\\register.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{6A82E7EA-4A03-4C7F-B458-B9FDE674D885}|cardsystem.client\\cardsystem.client.esproj|solutionrelative:cardsystem.client\\src\\pages\\register.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\controllers\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\controllers\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|c:\\users\\wisam\\source\\repos\\cardsystem\\cardsystem.server\\migrations\\20240301170925_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07EA80B9-998B-45E8-BB0D-5997B73D47CD}|CardSystem.Server\\CardSystem.Server.csproj|solutionrelative:cardsystem.server\\migrations\\20240301170925_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 210,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240301170925_1.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Migrations\\20240301170925_1.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Migrations\\20240301170925_1.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Migrations\\20240301170925_1.cs",
+              "RelativeToolTip": "CardSystem.Server\\Migrations\\20240301170925_1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T17:09:25.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Models\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "CardSystem.Server\\Models\\RegisterModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:46:06.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CardSystem.Server\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAgwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:38:09.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Models\\User.cs",
+              "RelativeToolTip": "CardSystem.Server\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:37:55.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "CardSystem.Server\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwDYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:48:54.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CardController.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Controllers\\CardController.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Controllers\\CardController.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Controllers\\CardController.cs",
+              "RelativeToolTip": "CardSystem.Server\\Controllers\\CardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T16:36:27.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Services\\EmailSender.cs",
+              "RelativeToolTip": "CardSystem.Server\\Services\\EmailSender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:56:20.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\cardsystem.client\\vite.config.ts",
+              "RelativeDocumentMoniker": "cardsystem.client\\vite.config.ts",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\cardsystem.client\\vite.config.ts",
+              "RelativeToolTip": "cardsystem.client\\vite.config.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-01T15:28:17.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.tsx",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\cardsystem.client\\src\\pages\\Register.tsx",
+              "RelativeDocumentMoniker": "cardsystem.client\\src\\pages\\Register.tsx",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\cardsystem.client\\src\\pages\\Register.tsx",
+              "RelativeToolTip": "cardsystem.client\\src\\pages\\Register.tsx",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAiwGcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-01T15:17:31.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Program.cs",
+              "RelativeDocumentMoniker": "CardSystem.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Wisam\\source\\repos\\CardSystem\\CardSystem.Server\\Program.cs",
+              "RelativeToolTip": "CardSystem.Server\\Program.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-01T15:11:08.493Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

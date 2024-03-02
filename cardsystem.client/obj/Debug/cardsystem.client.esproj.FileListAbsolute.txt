@@ -1,0 +1,1 @@
+C:\Users\Wisam\source\repos\CardSystem\cardsystem.client\obj\Debug\cardsystem.client.esproj.CoreCompileInputs.cache
